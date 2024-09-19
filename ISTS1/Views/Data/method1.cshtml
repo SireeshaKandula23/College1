@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+    @using (Html.BeginForm("method2", "Data", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+
+
+    <table>
+        <tr>
+            <td><label>Name</label></td>
+            <td><input type="text" id="txtfirstname" name="FirstName"></td>
+            <td><input type="text" id="txtlastname" name="LastName"></td>
+        </tr>
+        <tr>
+            <td><label>Rank</label></td>
+            <td colspan="2"><input type="text" id="txtrank" name="Rank" style="width:98%"></td>
+        </tr>
+        <tr>
+            <td><label>Email</label></td>
+            <td colspan="2"><input type="text" id="txtemail" name="Email" style="width:98%"></td>
+        </tr>
+        <tr>
+            <td><label>Phone</label></td>
+            <td><input type="text" id="txtAreaCode" name="AreaCode"></td>
+            <td><input type="text" id="txtPhoneNo" name="PhoneNo"></td>
+        </tr>
+        <tr>
+            <td><label>Branch</label></td>
+            <td colspan="2">
+                <select id="txtbranch" name="Branch" style="width:100% ;">
+                    <option value="ECE">Electrons and Communication Engg</option>
+                    <option value="CSE">Computer Science</option>
+                    <option value="Agri">Agri</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3"><label>Are you a existsing Student ?</label></td>
+
+        </tr>
+        <tr>
+            <td colspan="3"><input type="radio" id="txtstudent" name="IsStudent">Yes<input type="radio" id="txtstudent" name="IsStudent">No</td>
+
+        </tr>
+        <tr>
+            <td colspan="3"><input type="submit" href="#" style="border:2px solid orange;padding:10px;font-size:16px;color:red;margin-top: 50px;"></td>
+        </tr>
+
+    </table>
+    }
+
+</body>
+</html>
